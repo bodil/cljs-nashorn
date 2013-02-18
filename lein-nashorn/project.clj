@@ -1,4 +1,4 @@
-(defproject org.bodil/lein-nashorn "0.1.0"
+(defproject org.bodil/lein-nashorn "0.1.1"
   :description "Leiningen plugin for Nashorn REPL etc"
   :url "https://github.com/bodil/cljs-nashorn"
   :license {:name "Eclipse Public License"

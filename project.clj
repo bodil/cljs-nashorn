@@ -1,4 +1,4 @@
-(defproject org.bodil/cljs-nashorn-root "0.1.0"
+(defproject org.bodil/cljs-nashorn-root "0.1.1"
   :description "Clojurescript on Nashorn"
   :url "https://github.com/bodil/cljs-nashorn"
   :license {:name "Eclipse Public License"

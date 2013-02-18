@@ -30,7 +30,7 @@ $ sudo apt-get install oracle-java8-installer
 To setup the Leiningen plugin, add this to your `project.clj` or `~/.lein/profiles.clj`:
 
 ```clojure
-:plugins [[org.bodil/lein-nashorn "0.1.0"]]
+:plugins [[org.bodil/lein-nashorn "0.1.1"]]
 ```
 
 Then, start the REPL like this:
@@ -44,7 +44,7 @@ $ lein trampoline nasrepl
 Add the following dependency to your `project.clj`:
 
 ```clojure
-[org.bodil/cljs-nashorn "0.1.0"]
+[org.bodil/cljs-nashorn "0.1.1"]
 ```
 
 To launch the REPL the hard way, run `lein repl` and enter the following:
