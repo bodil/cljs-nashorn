@@ -15,7 +15,7 @@
   "Launch a ClojureScript REPL on Nashorn."
   [project & args]
   (require-trampoline
-   (let [project (deps/add-if-missing project '[org.bodil/cljs-nashorn "0.1.1"])]
+   (let [project (deps/add-if-missing project '[org.bodil/cljs-nashorn "0.1.2"])]
      (in-project project []
                  (ns (:require [cljs.repl.nashorn :as nashorn]))
                  (nashorn/run-nashorn-repl)))))
