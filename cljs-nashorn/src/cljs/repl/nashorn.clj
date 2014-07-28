@@ -36,9 +36,10 @@
                               repl-env "<cljs repl>" 1))]
       (if-let [res (io/resource cljs-path)]
         (binding [ana/*cljs-ns* 'cljs.user]
-          (repl/load-stream repl-env res))
+          (repl/load-stream repl-env cljs-path res))
         (if-let [res (io/resource js-path)]
-          (-eval (io/reader res) repl-env js-path 1)
+          (with-open [reader (io/reader res)]
+            (-eval reader repl-env js-path 1))
           (throw (Exception. (str "Cannot find " cljs-path " or "
                                   js-path " in classpath")))))
       (swap! (:loaded-libs repl-env) conj rule))))
